@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Pulsante Cibo</title>
+
+<style>
+  .btn-cibo {
+    display: inline-flex;
+    flex-direction: column;   /* testo sopra, immagine sotto */
+    align-items: flex-start;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .btn-cibo .label {
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .btn-cibo img {
+    width: 30%;
+    display: block;
+  }
+</style>
+
+</head>
+<body>
+
+<button class="btn-cibo">
+  <span class="label">cibo</span>
+
+  <!-- immagine base64 direttamente nell'HTML -->
+  <img src="immagini_pulsanti/Cibo.webp">
+</button>
+
+</body>
+</html>
