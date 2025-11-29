@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Madrid Food — Sapori di Madrid</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER GIALLO -->
+  <header style="background-color: #ffd700;" class="text-dark py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3 mb-0">Madrid Food</h1>
+      <nav></nav>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <!-- Hero -->
+    <section class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2>Scopri i sapori di Madrid</h2>
+        <p class="lead">Tapas, cocido madrileño, bocadillo de calamares e molto altro: una guida rapida ai must gastronomici della capitale spagnola.</p>
+        <div class="d-flex gap-2">
+          <a class="btn btn-primary" href="#dishes">Vedi i piatti</a>
+          
+      </div>
+    </section>
+
+    <!-- Featured dishes -->
+    <section id="dishes" class="mb-5">
+      <h3>Piatti tipici</h3>
+      <div class="row g-4 mt-2">
+        <article class="col-md-4">
+          <div class="card h-100">
+            <img src="https://cdn.discordapp.com/attachments/1124375662862532628/1444036141669023974/Cocido-scaled.png?ex=692b3ef5&is=6929ed75&hm=9213df9e1102791e4e862fb1a4f6cb746881f965abc044c47783d53eb5558d91&" class="card-img-top" alt="Cocido madrileño">
+            <div class="card-body">
+              <h5 class="card-title">Cocido Madrileño</h5>
+              <p class="card-text">Zuppa tradizionale di Madrid, ricca di legumi, verdure e carne. Perfetta per i mesi freddi.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalCocido">Scopri</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-4">
+          <div class="card h-100">
+            <img src="https://cdn.discordapp.com/attachments/1124375662862532628/1444036268815290368/91b01c01-0e35-49b0-9927-07b8b7b9d969_source-aspect-ratio_1600w_0.png?ex=692b3f13&is=6929ed93&hm=980220603ada9e6988b195446031d5246283bb2f3d0c80b57616c7af7b8962d8&" class="card-img-top" alt="Bocadillo de calamares">
+            <div class="card-body">
+              <h5 class="card-title">Bocadillo de Calamares</h5>
+              <p class="card-text">Il celebre panino con calamari fritti, simbolo delle friggitorie madrilene.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalBocadillo">Scopri</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-4">
+          <div class="card h-100">
+            <img src="https://cdn.discordapp.com/attachments/1124375662862532628/1444036392094007510/churros-chocolate-0f3587a6a59f4696af610cafe100d1fe.png?ex=692b3f30&is=6929edb0&hm=685e2bfa2282bc49584174d544a2818b7e7dd9316243e318386bcdc70db4505e&" class="card-img-top" alt="Churros con chocolate">
+            <div class="card-body">
+              <h5 class="card-title">Churros con Chocolate</h5>
+              <p class="card-text">Dolce tipico amato per colazioni o merende, da gustare in locali storici.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalChurros">Scopri</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    
+
+    
+    <div class="modal fade" id="modalCocido" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog"><div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cocido Madrileño</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Descrizione dettagliata, ingredienti tipici e consigli su dove provarlo a Madrid.</p>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="modal fade" id="modalBocadillo" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog"><div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Bocadillo de Calamares</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Storia del panino, locali consigliati e varianti regionali.</p>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="modal fade" id="modalChurros" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog"><div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Churros con Chocolate</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Origine, come si mangiano a Madrid e consigli per le migliori churrerie.</p>
+        </div>
+      </div></div>
+    </div>
+  </main>
+</body>
+</html>

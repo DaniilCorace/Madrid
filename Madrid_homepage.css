@@ -1,9 +1,11 @@
+/*pagina*/
 body {
 margin: 0;
 font-family: Arial, sans-serif;
 background: #f4f4f4;
 color: #333;
 }
+/* lo sfondo del titolo*/
 .sfondo {
 padding: 50px;
 text-align: center;
@@ -23,8 +25,6 @@ position: sticky;
 top: 0;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-
 nav button {
 padding: 10px 20px;
 border: none;
@@ -34,19 +34,14 @@ cursor: pointer;
 border-radius: 4px;
 font-size: 15px;
 }
-
-
 nav button:hover {
 background: orangered;
 }
 /*bottoni centrali*/
+/*toglie la riga del link*/
 a {
 text-decoration: none; /* rimuove la sottolineatura */
 color: inherit;        /* mantiene il colore del testo */
-border: none;
-padding: 30px;
-max-width: 900px;
-width: 100%;
 }
 .center {
     display: flex;
@@ -55,6 +50,7 @@ width: 100%;
 }
 .my-btn {
     background: white;
+    justify-content: right;
     text-align: left;
     border: none;
     padding: 30px;
@@ -66,6 +62,7 @@ width: 100%;
     cursor: pointer;
     transition: box-shadow 0.2s ease;
 }
+/*per mettere il testo in centro*/
 .cultura{
     background: white;
     border: none;
@@ -87,13 +84,11 @@ width: 100%;
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     background-color: rgb(206, 205, 205);
 }
-
+/*social*/
 .social {
 text-align: center;
 margin-top: 15px;
 }
-
-
 .social a {
 color: white;
 background: #e1306c;
@@ -101,12 +96,9 @@ padding: 8px 16px;
 border-radius: 4px;
 text-decoration: none;
 }
-
 .social a:hover {
 background: #c72c61;
 }
-
-
 footer {
 text-align: center;
 padding: 20px;
@@ -114,10 +106,9 @@ background: #222;
 color: white;
 margin-top: 40px;
 }
-
 .griglia{
 width: 600px;
 }
-img{
+.img{
 border-radius: 6px;
 }

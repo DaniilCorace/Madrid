@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Storia di Madrid</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* SFONDO PRINCIPALE */
+    body {
+      background-image: url('C:\Users\Francesco\Downloads\Madrid-main\Madrid-main\immagini\World___Spain_lights_of_Madrid_058592_23.jpg'); /* <-- FUNZIONA */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* EFFETTO SFONDO SFOCATO TRAMITE OVERLAY */
+    .page-overlay {
+      backdrop-filter: blur(6px);
+      background-color: rgba(0,0,0,0.35);
+      min-height: 100vh;
+      padding-bottom: 50px;
+    }
+
+    /* Testo più leggibile sullo sfondo */
+    h1, h2, h3, p {
+      color: white;
+    }
+
+    header h1 {
+      color: black !important;
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="page-overlay">
+
+  <!-- HEADER IDENTICO A QUELLO FOOD -->
+  <header style="background-color: #ffd700;" class="text-dark py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3 mb-0">Storia di Madrid</h1>
+      <nav></nav>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- HERO SECTION -->
+    <section class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2>Un viaggio nella storia della capitale spagnola</h2>
+        <p class="lead">
+          Da antico insediamento moresco a moderna metropoli europea: scopri come Madrid è diventata
+          una delle capitali più importanti del continente.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        
+      </div>
+    </section>
+
+    <!-- SEZIONE ORIGINI -->
+    <section class="mb-5">
+      <h3>Origini e Madrid araba</h3>
+      <p>
+        Le prime testimonianze significative risalgono al IX secolo, quando l’emiro
+        <strong>Muḥammad I di Cordova</strong> fece costruire una piccola fortezza conosciuta come 
+        <em>Mayrit</em>, il “luogo delle acque”. Questo insediamento moresco diede origine allo sviluppo
+        della futura capitale.
+      </p>
+      <img src="https://cdn.discordapp.com/attachments/1124375662862532628/1444037381652222002/cattedrale-di-almudena-e-antiche-mura-arabe-il-sole-nel-pomeriggio-i-colori-dell-autunno-al-parco-emir-mohamed-madrid-spagna-216711144.png?ex=692b401c&is=6929ee9c&hm=f97b034d71033c9fa8270b6a4cbb69c71c004726c948890e2ccaf189f18706ca&"
+           alt="Antiche mura arabe di Madrid" class="img-fluid rounded my-3">
+    </section>
+
+    <!-- SEZIONE EPOCA MEDIEVALE -->
+    <section class="mb-5">
+      <h3>Dal Medioevo alla corte reale</h3>
+      <p>
+        Dopo la Reconquista, Madrid passò sotto il controllo cristiano nel 1085. La sua posizione centrale 
+        nella penisola iberica la rese un nodo strategico. Nel XVI secolo, il re <strong>Filippo II</strong> 
+        trasferì qui la corte reale, trasformandola definitivamente in capitale del regno di Spagna.
+      </p>
+      <img src="https://cdn.discordapp.com/attachments/1124375662862532628/1444037679376371895/caption.png?ex=692b4063&is=6929eee3&hm=a9ed84605f626a23af2b3a77251413e8cdc6f672fc52d12075c0776e1f27971a&"
+           alt="Plaza Mayor" class="img-fluid rounded my-3">
+    </section>
+
+    <!-- SEZIONE EPOCA MODERNA -->
+    <section class="mb-5">
+      <h3>Madrid moderna</h3>
+      <p>
+        Tra XIX e XX secolo, Madrid visse forti trasformazioni urbanistiche: nacquero la 
+        <strong>Gran Vía</strong>, nuovi quartieri e linee ferroviarie. Dopo la dittatura franchista, 
+        la città divenne simbolo della rinascita culturale e artistica grazie alla celebre 
+        <strong>Movida Madrileña</strong>.
+      </p>
+      <img src="https://cdn.discordapp.com/attachments/1124375662862532628/1444037828274294966/Gran-Via.png?ex=692b4087&is=6929ef07&hm=609606b2fd03eb42b037e4576c2c829225a781d83a1ffee5a09fda29046f2b38&"
+           alt="Gran Vía di Madrid" class="img-fluid rounded my-3">
+    </section>
+
+    <!-- MAPPA -->
+    <section class="mb-5">
+      <h3>Luoghi storici principali</h3>
+      <p>Ecco una mappa dei punti storici più importanti della città.</p>
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5975745159897!2d-3.713!3d40.4168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287df3bdc6cf%3A0x6cf31b5d6a1c37d!2sPalacio%20Real%20de%20Madrid!5e0!3m2!1sit!2sit!4v1700000000000"
+          style="border:0;" allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

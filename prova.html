@@ -1,47 +1,51 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="UTF-8">
-<title>Pulsante Cibo</title>
-
-<style>
-  .btn-cibo {
-    display: inline-flex;
-    flex-direction: column;   /* testo sopra, immagine sotto */
-    align-items: flex-start;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    width: 200px;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .btn-cibo .label {
-    background: white;
-    color: black;
-    font-weight: bold;
-    padding: 10px 15px;
-    width: 100%;
-    font-size: 18px;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .btn-cibo img {
-    width: 30%;
-    display: block;
-  }
-</style>
-
-</head>
-<body>
-
-<button class="btn-cibo">
-  <span class="label">cibo</span>
-
-  <!-- immagine base64 direttamente nell'HTML -->
-  <img src="immagini_pulsanti/Cibo.webp">
+<button class="btn-split">
+    <span class="left-text">Cibo</span>
+    <span class="divider"></span>
 </button>
+<style>
+.btn-split {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 10px 16px;
+    background: white;
+    cursor: pointer;
+    gap: 16px;
+    width: 280px;
+    overflow: hidden;
+}
 
-</body>
-</html>
+/* Testo */
+.left-text {
+    font-size: 18px;
+    z-index: 2;
+    white-space: nowrap;
+    color: #000;
+}
+
+/* Riga più spessa e più inclinata */
+.divider {
+    position: relative;
+    z-index: 2;
+    width: 3px;                /* più spessa */
+    height: 50px;              /* leggermente più lunga */
+    background: #ffffff;       /* colore della riga */
+    transform: rotate(45deg);  /* più inclinata verso destra */
+    margin-left: 10px;
+}
+
+/* Immagine di sfondo */
+.btn-split::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-image: url("immagini_pulsanti/Cibo.webp");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+</style>
