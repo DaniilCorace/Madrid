@@ -1,51 +1,75 @@
-<button class="btn-split">
-    <span class="left-text">Cibo</span>
-    <span class="divider"></span>
-</button>
+
+<div class="center" id="cibo">
+  <a href="cibi.html">
+  <button class="my-btn">
+
+    <div class="btn-content">
+
+      <div class="text">
+        <h2>Cibo</h2>
+        <p>Descrizione dei piatti tradizionali della città.</p>
+      </div>
+
+      <!-- LINEA BIANCA -->
+      <div class="divider"></div>
+
+      <img src="immagini_pulsanti/Cibo.webp" alt="cibo" class="btn-img">
+
+    </div>
+
+  </button></a>
+</div>
 <style>
-.btn-split {
+.center {
     display: flex;
-    align-items: center;
-    position: relative;
-    border: 1px solid #ccc;
-    padding: 10px 16px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.my-btn {
     background: white;
-    cursor: pointer;
-    gap: 16px;
-    width: 280px;
+    border: none;
+    padding: 0;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
     overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    text-align: left;
 }
 
-/* Testo */
-.left-text {
-    font-size: 18px;
-    z-index: 2;
-    white-space: nowrap;
-    color: #000;
-}
-
-/* Riga più spessa e più inclinata */
-.divider {
+.btn-content {
+    display: flex;
+    width: 100%;
     position: relative;
-    z-index: 2;
-    width: 3px;                /* più spessa */
-    height: 50px;              /* leggermente più lunga */
-    background: #ffffff;       /* colore della riga */
-    transform: rotate(45deg);  /* più inclinata verso destra */
-    margin-left: 10px;
 }
 
-/* Immagine di sfondo */
-.btn-split::before {
-    content: "";
+.text {
+    padding: 30px;
+    flex: 1;
+}
+
+/* --- LINEA BIANCA OBIQUA --- */
+.divider {
+    width: 100px;              /* spessore della linea */
+    top: -40%;
+    bottom: -40%;
+    left: 45%;
+    background: white;       /* colore */         /* distanza tra testo e immagine */
+    transform: translateX(-50%) rotate(25deg); /* inclinazione */
+    transform-origin: center;
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 60%;
-    height: 100%;
-    background-image: url("immagini_pulsanti/Cibo.webp");
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
+}
+.my-btn:hover .divider {
+    width: 4px;
+    box-shadow: 0 0 10px white;
+    transform: rotate(35deg);
+    background-color: rgb(206, 205, 205);
+}
+.btn-img {
+    height: 200px;
+    width: 500px;
+    object-fit: cover;
 }
 </style>
