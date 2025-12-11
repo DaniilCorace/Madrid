@@ -1,0 +1,75 @@
+
+<div class="center" id="cibo">
+  <a href="cibi.html">
+  <button class="my-btn">
+
+    <div class="btn-content">
+
+      <div class="text">
+        <h2>Cibo</h2>
+        <p>Descrizione dei piatti tradizionali della città.</p>
+      </div>
+
+      <!-- LINEA BIANCA -->
+      <div class="divider"></div>
+
+      <img src="immagini_pulsanti/Cibo.webp" alt="cibo" class="btn-img">
+
+    </div>
+
+  </button></a>
+</div>
+<style>
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.my-btn {
+    background: white;
+    border: none;
+    padding: 0;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    text-align: left;
+}
+
+.btn-content {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.text {
+    padding: 30px;
+    flex: 1;
+}
+
+/* --- LINEA BIANCA OBIQUA --- */
+.divider {
+    width: 100px;              /* spessore della linea */
+    top: -40%;
+    bottom: -40%;
+    left: 45%;
+    background: white;       /* colore */         /* distanza tra testo e immagine */
+    transform: translateX(-50%) rotate(25deg); /* inclinazione */
+    transform-origin: center;
+    position: absolute;
+}
+.my-btn:hover .divider {
+    width: 4px;
+    box-shadow: 0 0 10px white;
+    transform: rotate(35deg);
+    background-color: rgb(206, 205, 205);
+}
+.btn-img {
+    height: 200px;
+    width: 500px;
+    object-fit: cover;
+}
+</style>

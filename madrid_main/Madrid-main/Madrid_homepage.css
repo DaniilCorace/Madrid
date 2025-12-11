@@ -1,0 +1,143 @@
+/*pagina*/
+body {
+    margin: 0;                        /* Rimuove il margine predefinito della pagina */
+    font-family: Arial, sans-serif;   /* Imposta il font della pagina */
+    background: #f4f4f4;              /* Colore di sfondo della pagina */
+    color: #333;                      /* Colore del testo generale */
+}
+/* --- SFONDO DEL TITOLO (parte alta della pagina) --- */
+.sfondo {
+    padding: 50px;                                    /* Spaziatura interna */
+    text-align: center;                               /* Centra il contenuto */
+    background-image: url("immagini/sfondo_Madrid_homepage.png");  /* Immagine di sfondo */
+    background-size: cover;                           /* Adatta l'immagine alla larghezza */
+    background-repeat: no-repeat;                     /* Evita la ripetizione dell'immagine */
+    color: white;                                     /* Testo in bianco sopra lo sfondo */
+}
+/* --- NAVBAR (bottoni in alto) --- */
+nav {
+    display: flex;                                    /* Allinea gli elementi in orizzontale */
+    justify-content: center;                          /* Centra i bottoni */
+    gap: 15px;                                        /* Spazio tra i bottoni */
+    background: #fff;                                 /* Sfondo bianco */
+    padding: 15px;                                    /* Spaziatura interna */
+    position: relative;
+    top: 0;                                           /* Rimane in cima */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);         /* Leggera ombra sotto la navbar */
+}
+nav button {
+    padding: 10px 20px;                               /* Dimensioni del bottone */
+    border: none;                                     /* Rimuove contorno */
+    background: orange;                               /* Colore del bottone */
+    color: white;                                     /* Testo bianco */
+    cursor: pointer;                                  /* Mostra la mano al passaggio */
+    border-radius: 4px;                               /* Angoli arrotondati */
+    font-size: 15px;                                  /* Grandezza testo */
+}
+nav button:hover {
+    background: orangered;                            /* Cambia colore al passaggio del mouse */
+}
+/* --- BOTTONI CENTRALI --- */
+/* Rimuove la sottolineatura dai link e mantiene il loro colore */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.center {
+    display: flex;
+    justify-content: center;                          /* Centra orizzontalmente gli elementi */
+    margin-top: 40px;                                 /* Spazio dall’alto */
+}
+.my-btn {
+    background: white;                                /* Sfondo bianco */
+    border: none;                                     /* Nessun bordo */
+    padding: 0;                                       /* Nessun padding */
+    width: 900px;                                     /* Larghezza del bottone */
+    border-radius: 6px;                               /* Angoli arrotondati */
+    overflow: hidden;                                 /* Taglia ciò che esce dai bordi */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);           /* Ombra attorno */
+    cursor: pointer;                                  /* Puntatore a mano */
+    text-align: left;                                 /* Testo allineato a sinistra */
+}
+/* --- BOX CULTURA (testo centrato e stile card) --- */
+.cultura {
+    background: white;                                /* Sfondo bianco */
+    border: none;                                     /* Nessun bordo */
+    padding: 30px;                                    /* Spaziatura interna */
+    max-width: 700px;                                 /* Larghezza massima */
+    width: 100%;                                      /* Adattabile allo schermo */
+    border-radius: 6px;                               /* Angoli arrotondati */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);           /* Ombra */
+    font-size: 18px;                                  /* Dimensione testo */
+    transition: box-shadow 0.2s ease;                 /* Animazione dell’ombra */
+    display: flex;
+    flex-direction: column;                           /* Testo sopra, immagine sotto */
+    justify-content: center;                          /* Centra verticalmente */
+    align-items: center;                              /* Centra orizzontalmente */
+    text-align: center;                               /* Testo centrato */
+}
+/* Effetto hover sul bottone centrale */
+.my-btn:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);          /* Ombra più grande al passaggio */
+    background-color: rgb(206, 205, 205);             /* Cambia il colore di sfondo */
+}
+.btn-img {
+    height: 200px;                                    /* Altezza fissa */
+    width: 500px;                                     /* Larghezza dell'immagine */
+    object-fit: cover;                                /* Ritaglia l’immagine senza deformarla */
+    display: inline-block;
+}
+.btn-content {
+    display: flex;                                    /* Affianca immagine + testo */
+    width: 100%;
+    position: relative;                               /* Necessario per la linea obliqua */
+}
+/* LINEA DI SEPARAZIONE (divider) */
+.divider {
+    width: 100px;                                     /* Lunghezza linea */
+    top: -40%;                                        /* Estensione verso l’alto */
+    bottom: -40%;                                     /* Estensione verso il basso */
+    left: 45%;                                        /* Posizione orizzontale */
+    background: white;                                /* Colore della linea */
+    transform: translateX(-50%) rotate(25deg);        /* Spostamento e inclinazione */
+    transform-origin: center;                         /* Punto di rotazione */
+    position: absolute;                               /* Permette posizionamento libero */
+}
+/* Cambia colore della linea quando il bottone è in hover */
+.my-btn:hover .divider {
+    background: rgb(206, 205, 205);
+}
+.text {
+    padding: 30px;                                    /* Spaziatura interna */
+    font-size: 16px;                                  /* Dimensione testo */
+    flex: 1;                                          /* Occupa lo spazio rimanente */
+}
+/* --- SEZIONE SOCIAL --- */
+.social {
+    text-align: center;                               /* Centra i link social */
+    margin-top: 15px;
+}
+.social a {
+    color: white;
+    background: #e1306c;                              /* Rosa Instagram */
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.social a:hover {
+    background: #c72c61;                              /* Rosa più scuro al passaggio */
+}
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;                                 /* Sfondo scuro */
+    color: white;                                     /* Testo bianco */
+    margin-top: 40px;
+}
+.griglia {
+    width: 600px;                                     /* Larghezza delle immagini o contenitori */
+}
+.img {
+    border-radius: 6px;                               /* Immagini con angoli arrotondati */
+}
